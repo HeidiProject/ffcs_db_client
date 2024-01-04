@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.env
+*~
+DEADJOE
+*_WORKING*
+*_ORI
+commit_to_heidi.sh*
+
 # C extensions
 *.so
 

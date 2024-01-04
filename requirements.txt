@@ -1,0 +1,9 @@
+### This is used for running the integration test in a Docker container:
+### docker run --rm -it -v $(pwd):/app -w /app -e HISTSIZE=20000 -e HISTFILESIZE=40000 python:3.9.13 /bin/bash -c "apt update && apt install -y build-essential cmake && pip install -r requirements.txt && /bin/bash -c 'exec /bin/bash'"
+### docker run --rm -v /sls/MX/applications/git/ffcs/ffcs_db_client:/app -w /app python:3.9.13 /bin/bash -c "apt update && apt install -y build-essential cmake && pip install -r requirements.txt && python ffcs_db_client_integration_test.py"
+### python ffcs_db_client_integration_test.py
+
+pymongo
+python-dateutil
+rdkit-pypi
+requests
